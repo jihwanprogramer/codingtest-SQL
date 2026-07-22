@@ -2,7 +2,7 @@ import java.util.*;
 
 class Solution {
     public int solution(int[] priorities, int location) {
-        Queue<int[]> queue = new LinkedList<>();
+        Queue<int[]> queue = new ArrayDeque<>();
 
         for (int i = 0; i < priorities.length; i++) {
             queue.offer(new int[]{i, priorities[i]});
