@@ -10,4 +10,5 @@
 | [1068-product-sales-analysis-i](https://github.com/jihwanprogramer/codingtest-SQL/tree/main/1068-product-sales-analysis-i/) | Easy |
 | [1070-product-sales-analysis-iii](https://github.com/jihwanprogramer/codingtest-SQL/tree/main/1070-product-sales-analysis-iii/) | Medium |
 | [1164-product-price-at-a-given-date](https://github.com/jihwanprogramer/codingtest-SQL/tree/main/1164-product-price-at-a-given-date/) | Medium |
+| [1667-fix-names-in-a-table](https://github.com/jihwanprogramer/codingtest-SQL/tree/main/1667-fix-names-in-a-table/) | Easy |
 <!---LeetCode Topics End-->
