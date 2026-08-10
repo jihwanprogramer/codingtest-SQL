@@ -25,18 +25,21 @@ class Solution {
             int a = cur[0];
             int b = cur[1];
             int time = cur[2];
+            
+            if(a == n-1 && b ==m -1){
+                return time;
+            }
         
             for(int i=0;i<4;i++){
                 int nx = a + dc[i];
                 int ny = b + dr[i]; 
                 if(nx>=0 && nx<n && ny>=0 && ny<m){
                     if(maps[nx][ny] == 1 && !check[nx][ny]){
-                        if(nx == n-1 && ny ==m -1){
-                        return time+1;
-                        }
                         
                         check[nx][ny] = true;
                         queue.add(new int[]{nx,ny,time+1});
+                        
+                        
                     }
                     
                     
