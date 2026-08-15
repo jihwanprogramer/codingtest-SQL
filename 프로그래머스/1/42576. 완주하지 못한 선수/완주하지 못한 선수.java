@@ -1,26 +1,21 @@
 import java.util.*;
 class Solution {
     public String solution(String[] participant, String[] completion) {
-        String answer = "";
+        Map<String,Integer> mapp = new HashMap<>();
+        for(String name : participant){
+            mapp.put(name,mapp.getOrDefault(name,0)+1);
+        }
         
-        Map<String,Integer> map = new HashMap<>();
-        for(String s:participant){
-            if(map.containsKey(s)){
-                map.put(s,map.get(s)+1);
-            }else{
-                map.put(s,1);
+       for(String name : completion){
+           mapp.put(name,mapp.get(name)-1);
+       }
+        
+        for(String name:mapp.keySet()){
+            if(mapp.get(name)>0){
+                return name;
             }
         }
         
-        for(String name:completion){
-            map.put(name,map.get(name)-1);
-        }
-       
-        for(String ans:map.keySet()){
-            if(map.get(ans)>0){
-                answer=ans;
-            }
-        }
-        return answer;
+        return "";
     }
 }
